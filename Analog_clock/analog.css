@@ -121,7 +121,7 @@ span {
   left: 50%;
   bottom: 50%;
   border-radius: 150px 150px 0 0;
-
+  z-index:10;
   transform-origin: bottom;
   transform: translateX(-50%) rotate(calc(var(--hand-rotation) * 1deg));
 }
@@ -139,6 +139,7 @@ span {
   border: 5px solid black;
   transform: translate(-50%, -50%);
   background-color: darkslategray;
+  z-index: 11;
 }
 .clock .hand.second {
   width: 3px;
