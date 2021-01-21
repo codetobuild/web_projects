@@ -44,7 +44,7 @@
    var city;
     city= input.value ? input.value : 'Agartala';
    try{
-    const url='http://api.weatherapi.com/v1/current.json?key=da80e53e244544429af165949212101&q=';
+    const url='https://api.weatherapi.com/v1/current.json?key=da80e53e244544429af165949212101&q=';
     const response = await axios.get(url+city);
  
     const imageLink=response.data.current.condition.icon;
