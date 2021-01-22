@@ -43,7 +43,7 @@
     const weather = async()=>{
      
      var city;
-      city= input.value ? input.value : 'Agartala';
+      city= input.value ? input.value : 'new york';
      try{
       const url='https://api.weatherbit.io/v2.0/current?key=681d15ebc9524a5ab66b1a711e8dd64e&city=';
       const response = await axios.get(url+city);
