@@ -23,6 +23,7 @@ body{
   background-image: url(./images/bg-pattern.svg);
   background-repeat: no-repeat;
   background-position-x: left;
+  background;
   background-position-y: -200px;
   background-size: cover;
 }
@@ -34,7 +35,6 @@ body{
     font-size: 2.5rem;
      text-align: center;
      width: 100%;
-     color: teal;
      font-weight: 550;
 }
 
@@ -78,39 +78,43 @@ body{
 {
  
     grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
-.row-2 .line{
-  width: 90%;
-  height: 10px;
-  margin:auto;
-  position: relative;
-  top:50%;
-  transform: translateY(-50%);
-  border-radius:99999px;
-  background-color: rgb(212, 212, 212);
-  box-shadow: 1px 1px 5pxgrey inset;
+input[type="range"]
+{
+   width: 90%;
+   -webkit-appearance: none;
 }
-.row-2 .line .innerline{
+input[type="range"]:focus
+{
+   outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+  height:1rem;
+  width: 100%;
+  background-color: rgb(201, 201, 201);
+  border-radius: 555px;
  
-    width: 60%;
-    height:100%;
-    background-color: teal;
-    border-radius:99999px;
 }
-.row-2 .line .slider{
-    background-color: teal;
-   width:25px;
-   height:25px;
-   padding:5px;
-   border-radius: 50%;
-   position: absolute;
-   top:-80%;
-   left:60%;
-   transform: translateX(-50%);
-
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width:25px;
+    height: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0 black;
+    border-radius: 50%;
+   
+    position: relative;
+    top:-2.8px;
 }
-
+input[type="range"]:hover::-webkit-slider-runnable-track{
+ 
+    background-color: rgb(172, 172, 172);
+    
+}
 
 
 .row-3{
@@ -136,9 +140,15 @@ body{
     border-radius: 50%;
      position: absolute;
     top:50%;
-    left:5px;
+  
     transform: translateY(-50%);
     background-color: white;
+    left:5px;
+}
+ 
+.row-3 .on-off .circle-on
+{  
+   left:50% 
 }
 .row-3 p{
  
@@ -192,10 +202,10 @@ body{
 }
 .row-4 .button-container .btn{
     display: block;
-    padding: .5rem 2rem;
+    padding: 1rem 1.8rem;
     font-size: 1rem;
     background-color: darkslategrey;
-    color:cyan;
+    color:white;
     outline: none;
     border:0;
     border-radius: 999999px;
@@ -208,15 +218,15 @@ body{
        font-size: .9rem;
     }
   body{
-  background-size: cover;
-  background-position-y: -100px;
+  background: none;
+  background-color: skyblue;
 
   }
    .container .title{
-       font-size: 2rem;
+       font-size: 1.8rem;
    }
     .container{
-        width: 350px;
+        width: 330px;
     }
   
     .row-3{
@@ -231,6 +241,10 @@ body{
         flex:1 100%;
      text-align: center;
  
+    }
+    .row-4 .button-container .btn{
+        padding: .8rem 1rem;
+        
     }
 }
 
