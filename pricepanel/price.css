@@ -85,7 +85,7 @@ body{
 
 input[type="range"]
 {
-   width: 90%;
+   width: 80%;
    -webkit-appearance: none;
 }
 input[type="range"]:focus

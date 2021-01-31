@@ -4,9 +4,13 @@ const price = document.querySelector('.price');
 const slider= document.querySelector('#myrange');
 price.innerHTML=`$ ${slider.value}.00`
 
-slider.addEventListener('input' , ()=>{
+
+ 
+slider.addEventListener('input' , (e)=>{
     console.log(slider.value);
     price.innerHTML=`$ ${slider.value}.00`;
+
+ 
 })
 
 

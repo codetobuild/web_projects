@@ -1,0 +1,133 @@
+
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+ 
+a{
+    display: block;
+}
+body{
+    padding: 0;
+    margin:0;
+    background: dodgerblue;
+    font-family: 'Poppins', sans-serif;
+
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.wrapper{
+    
+ width: 500px;
+ height: 500px;
+background-color:rgba(225, 225,225,0.8);
+ position: relative;
+ overflow: hidden;
+  position: relative;
+  text-align: center;
+  
+}
+
+.slider{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+ 
+    width: 400px;
+    height: 330px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+
+}
+
+.slider::-webkit-scrollbar{
+ -webkit-appearance: none;
+
+}.slider::-webkit-scrollbar-track{
+    -webkit-appearance: none;
+    width: 90%;
+    -webkit-appearance: none;
+   background-color: rgb(44, 44, 44);
+   border-radius: 99999px;
+   }
+.slider::-webkit-scrollbar-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    background-color: dodgerblue;
+    border-radius: 99999px;
+}
+
+.slider>img{
+width: 430px;
+height:300px;
+margin-right: 50px;
+ 
+scroll-snap-align: start;
+ 
+}
+
+
+.wrapper>a{
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 2rem;
+ height: 2rem;
+ background-color: white;
+ border-radius: 50%;
+ text-decoration: none;
+  margin : 15px 10px 0 10px;
+  padding:5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+ 
+.wrapper>a:hover{
+   transform: scale(1.23);
+
+}
+.foot{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+ 
+    font-size:2rem;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
