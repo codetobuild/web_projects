@@ -1,0 +1,224 @@
+
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;;
+}
+body{
+    padding:0;
+    margin:0;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    height: 100vh;
+    background-color: dodgerblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+}
+
+.mobile{
+    width: 330px;
+    height: 650px;
+    background-color: hsl(0, 0%, 93%);
+
+    border-radius: 30px;
+    border:10px solid white;
+
+    display:grid;
+    grid-template-columns: repeat(5, 62px);
+    grid-template-rows: 90px repeat(9, 1fr);
+    row-gap: 10px;
+    overflow: hidden;
+    position: relative;
+
+    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+}
+
+.camera{
+  width: 45%;
+  height: 30px;
+   left:50%;
+   transform: translateX(-50%);
+  border-radius:  0 0 15px 15px;
+  background-color: white;
+  position:absolute;
+  top:-10px;
+}
+/*****************************/
+.mobile .headbar{
+    grid-column: 1/-1;
+   
+    background:linear-gradient(to left,hsl(293, 100%, 63%),hsl(264, 100%, 61%) );
+    border-radius:0 0 5px 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.title{
+    flex-grow: 2;
+    color:white;
+    padding-left: 10px;
+}
+.title .name{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.title .available{
+    font-weight:100;
+    font-size: 0.8rem;
+    color:hsl(276, 100%, 81%);
+}
+
+ .navigate{
+     flex-grow: 1;
+   color:white;
+   text-align: center;
+    font-size: 1.2rem;
+    justify-self:flex-end;
+}
+/**************************/
+
+.chat-left{
+   grid-column:1/span 3 ;
+   background-color:hsl(274, 100%, 97%);
+   border-radius:10px 10px 10px 2px ;
+   margin-left: 8px;
+   padding:5px;
+   color:hsl(276, 55%, 52%);
+   box-shadow: 1px 3px 10px 0 rgba(0,0,0,.2) ;
+
+}
+
+.dog{
+    border-radius: 8px;
+    box-shadow: 1px 3px 10px 0 rgba(0,0,0,.2) ;
+
+}
+.dog1{
+  grid-column: 3/span 1;
+}
+.dog2{
+    grid-column: 4/span 1;
+}
+.dog3{
+    grid-column: 5/span 1;
+}
+
+.chat-right{
+     grid-column: 3/-1;
+     background-color: white;
+     margin-right: 8px;
+     padding: 5px;
+     border-radius:10px 10px 2px 10px;
+     box-shadow: 1px 2.5px 8px 0 rgba(0,0,0,.1) ;
+
+}
+
+
+.task{
+    background:linear-gradient(to left,hsl(293, 100%, 63%),hsl(264, 100%, 61%) );
+   padding:5px;
+   margin-left: 8px;
+   border-radius: 10px 10px 10px 2px;
+     grid-column: 1/span 4;
+   
+     display: grid;
+     grid-template-columns: auto auto auto;
+     place-items: center;
+     box-shadow: 1px 2.5px 8px 0 rgba(0,0,0,.3) ;
+}
+.task .dot1, .task .dot2{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border:2px solid white;
+    border-radius: 50%;
+    justify-self: self-start;
+ 
+}
+.task .task-chat{
+  font-size: 1.2rem;
+}
+.task .price
+{
+    font-size: 1.5rem;
+    font-weight: 800;
+    justify-self: self-end;
+}
+.task-first{
+    grid-row: 8/span 1;
+}
+.task-second{
+    grid-row: 9/span 1;
+}
+.task .ch2{
+    justify-self:self-start;
+}
+
+
+.input-box{
+    grid-column: 1/-1;
+    grid-row: 10/span 1;
+    background-color: white;
+    border-radius: 99999px;
+   position: relative;
+   margin:5px;
+   padding:5px;
+   box-shadow: 1px 3px 10px 0 rgba(0,0,0,.2) ;
+
+
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+   flex-grow: 1;
+   
+
+}
+
+input[type="text"]
+{
+  outline:none;
+  border:0;
+  padding: 5px;
+  border-radius: 5px;
+    flex-grow: 1;
+}
+ 
+.send{
+    transform: rotate(-90deg);
+    justify-self: flex-end;
+    font-size: 2rem;
+    text-align: right;
+    
+}
+ 
+
+@media all and (max-width:390px)
+{
+    body{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: auto;
+        overflow: visible;
+        overflow-x: hidden;
+    }
+    .mobile{
+        width: 290px;
+        height: 700px;
+        grid-template-columns: repeat(5, 54px);
+    }
+ 
+}
