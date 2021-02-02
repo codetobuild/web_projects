@@ -270,7 +270,7 @@ input[type="text"]
         border-radius: 0;
         padding : 20px 0;
         width: 100vw;
-        height: auto;
+        height: 100vh;
         background-color: white;
      }
     .wrapper .mobile{
@@ -290,12 +290,14 @@ input[type="text"]
 @media all and (max-width:390px)
 {
     body{
-        margin-top: 50px;
-        margin-bottom: 50px;
         height: auto;
         overflow: visible;
         overflow-x: hidden;
     }
+    .wrapper .backcover{
+        top:-10%;
+    }
+ 
     .mobile{
         font-size:.7rem;
         width: 280px;
@@ -317,9 +319,18 @@ input[type="text"]
     }
    
   .content .main-title{
-        font-size: 1.5rem;
+        font-size:2rem;
         text-align: center;
     }
 }
 
+body::-webkit-scrollbar{
+    -webkit-appearance: none;
+    width:10px;
+    background-color: dodgerblue;
+}
 
+body::-webkit-scrollbar-thumb{
+    -webkit-appearance: none;
+    background-color: white;
+}
