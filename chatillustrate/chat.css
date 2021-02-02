@@ -19,21 +19,75 @@ body{
     place-content: center;
     place-items: center;
     height: 100vh;
-    background-color: dodgerblue;
+    background-color: hsl(0, 0%, 93%);
+    background-image: url(./images/);
     font-family: 'Roboto', sans-serif;
     font-size: .9rem;
 }
 
-.mobile{
-    width: 330px;
-    height: 650px;
-    background-color: hsl(0, 0%, 93%);
+.wrapper{
+    width: 90vw;
+    min-height:80vh;
+    background-color:white;
+    border-radius: 30px;
+    position: relative;
 
+    display: grid;
+    column-gap: 100px;
+    grid-template-columns:1fr 1fr;
+    justify-items:center;
+    
+    place-items: center;
+    overflow: hidden;
+}
+.wrapper .backcover{
+    width:900px;
+    height: 600px;
+    position: absolute;
+    top:-5px;
+    /* left:-10%; */
+    border-radius: 0 0 9999px 9999px;
+    background:linear-gradient(to right,hsl(293, 100%, 51%),hsl(264, 100%, 55%) );
+    z-index: 0;
+    background-color: red;
+}
+.wrapper .backcover-2{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    top:10%;
+    left:50%;
+ 
+
+}
+.wrapper .content{
+   padding:10px;
+   justify-self: self-start;
+ max-width: 500px;
+ position: relative;
+}
+.content .main-title
+{   font-size:4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.content .main-description{
+    font-size: 1.3rem;
+    color: rgba(0,0,0,0.8);
+    font-weight:600;
+}
+/**********************************/
+.mobile{
+    justify-self:self-end;
+    width: 300px;
+    height: 580px;
+    background-color: hsl(0, 0%, 93%);
+    font-size: .7rem;
     border-radius: 30px;
     border:10px solid white;
 
     display:grid;
-    grid-template-columns: repeat(5, 62px);
+    grid-template-columns: repeat(5, 56px);
     grid-template-rows: 90px repeat(9, 1fr);
     row-gap: 10px;
     overflow: hidden;
@@ -164,10 +218,13 @@ body{
 .task-second{
     grid-row: 9/span 1;
 }
-.task .ch2{
+.task .ch2,.task .ch1{
     justify-self:self-start;
+    font-size: 1rem;
 }
-
+.task .price{
+    font-size: 1.1rem;
+}
 
 .input-box{
     grid-column: 1/-1;
@@ -205,6 +262,30 @@ input[type="text"]
     
 }
  
+@media all and (max-width:830px)
+{
+    .wrapper{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        border-radius: 0;
+        padding : 20px 0;
+        width: 100vw;
+        height: auto;
+        background-color: white;
+     }
+    .wrapper .mobile{
+        justify-self: center;
+    }
+    .wrapper .content{
+        justify-self: center;
+        text-align: center;
+    }
+ 
+    .wrapper .main-title{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
 
 @media all and (max-width:390px)
 {
@@ -216,9 +297,29 @@ input[type="text"]
         overflow-x: hidden;
     }
     .mobile{
-        width: 290px;
-        height: 700px;
-        grid-template-columns: repeat(5, 54px);
+        font-size:.7rem;
+        width: 280px;
+        height: 550px;
+        grid-template-columns: repeat(5, 52px);
+        grid-template-rows: 70px repeat(9, 1fr);
     }
+    .mobile .camera{
+        width: 45%;
+    height: 26px;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius:  0 0 13px 13px;
  
 }
+    .mobile .headbar img{
+        width: 35px;
+        height: 35px;
+    }
+   
+  .content .main-title{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+
