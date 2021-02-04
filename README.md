@@ -6,6 +6,8 @@
 * [https://codetobuild.github.io/webprojects.github.io/signup/index.html] Simple **Sign up form UI** 
 * [https://codetobuild.github.io/webprojects.github.io/pricepanel/price.html] Interactive **price panel for a subscription** 
 
+***Web apps projects with vanilla javascript***
 * [https://codetobuild.github.io/webprojects.github.io/weatherapp/index.html] **weather app** web app powered by free weather api
+* [https://codetobuild.github.io/webprojects.github.io/textbox/textbox.html] **text box** web app.
 * [https://codetobuild.github.io/webprojects.github.io/jokes/index.html] Random **jokes generator** web app working with api.
 * [https://codetobuild.github.io/webprojects.github.io/analogclock/index.html] Simple **Analog clock** web app
