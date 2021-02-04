@@ -5,5 +5,7 @@
 * [https://codetobuild.github.io/webprojects.github.io/chatillustrate/chat.html] Responsive **landing page for service UI webpage** 
 * [https://codetobuild.github.io/webprojects.github.io/signup/index.html] Simple **Sign up form UI** 
 * [https://codetobuild.github.io/webprojects.github.io/pricepanel/price.html] Interactive **price panel for a subscription** 
+
+* [https://codetobuild.github.io/webprojects.github.io/weatherapp/index.html] **weather app** web app powered by free weather api
 * [https://codetobuild.github.io/webprojects.github.io/jokes/index.html] Random **jokes generator** web app working with api.
 * [https://codetobuild.github.io/webprojects.github.io/analogclock/index.html] Simple **Analog clock** web app
