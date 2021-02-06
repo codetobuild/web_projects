@@ -42,11 +42,13 @@ body{
         /* background-color: teal; */
         margin:0;
         padding: 0;
+        overflow-x: hidden;
+
         
     }
     
     .wrapper{
-
+        overflow-x: hidden;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 80px  repeat(10,minmax(300px,auto)) repeat(4,auto) minmax(200px, 1fr);
@@ -73,7 +75,7 @@ body{
         position: absolute;
         transform: rotate(0deg);
 
-        transition: .3s ease-in-out;
+        transition: .2s ease-in-out;
     }
      .hamburger span:nth-child(1)
       {
@@ -442,7 +444,10 @@ body{
       justify-content: center;
       align-items: center;
   }
-
+.block-15 .ownership
+{
+    justify-self: center;
+}
 
     
 
