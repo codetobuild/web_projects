@@ -13,7 +13,7 @@
     --text:'Poppins', sans-serif;
     --shadow:rgba(0, 0, 0, 0.3);
     --text-color:rgba(0,0,0,0.7);
-    --btn-font:1.3rem;
+    --btn-font:1.25rem;
 }
 img{
     display: block;
@@ -35,7 +35,7 @@ body{
 
 
 
-@media screen and ( min-width:200px)
+@media screen and ( min-width:300px)
 {
     
     body{
@@ -114,7 +114,7 @@ body{
     /***************/
    .navbar{
   
-       background-color: var(--soft-blue);
+       /* background-color: var(--soft-blue); */
        display: flex;
        flex-flow: row nowrap;
        justify-content: space-between;
@@ -151,7 +151,7 @@ body{
         text-align: center;
         text-decoration: none;
         color:white;
-        padding: 1rem;
+         padding: 1rem;
     }
 
     /******************************/
@@ -185,6 +185,8 @@ body{
       .block-2{
         /* background-color: red;  */
         padding:1rem;
+        display: grid;
+        justify-content: center;
       }
       .heading{
           display: block;
@@ -202,8 +204,8 @@ body{
           text-align: justify;
       }
       .block-2 .btn{
-          width: 90%;
-          font-family: var(--heading);
+        width: 90%;
+        font-family: var(--heading);
           font-size: var(--btn-font);
           padding: .8rem 1rem;
           margin: 1rem;
@@ -337,6 +339,9 @@ body{
         justify-content: center;
         /* align-content: center; */
     }
+    .block-9 .card{
+        margin:auto auto 0 auto ;
+    }
     .block-10{
         /* background-color: red; */
         display: grid;
@@ -454,6 +459,162 @@ body{
     
 }
 
+@media screen and (min-width:501px) and (max-width:1024px)
+{   
+
+     .wrapper{
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: repeat(12,8.33vw);
+    grid-template-rows: 90px 400px repeat(7,minmax(300px,auto)) repeat(5,auto) ;
+   }
+    .navbar{
+        flex-direction: column;
+         align-items: center;
+         justify-content:space-evenly;
+         grid-column: 1/12;
+         width: 100vw;
+
+         /* background: transparent; */
+      
+    }
+   .hamburger{
+       display: none;
+   }
+   .links{
+       display: block;
+       top:0px;
+       padding: 0;
+       margin: 0;
+       width: 100vw;
+       background: transparent;
+       position: relative;
+       display: flex;
+       flex-flow:row nowrap;
+       justify-content: space-evenly;
+   }
+   .links a:nth-child(1)
+   {
+       /* background: red; */
+       order:1;
+   }
+   .links a{
+       display: inline-block;
+       /* background: ; */
+       color:black;
+       padding: .5rem;
+
+   }
+  body{ 
+      overflow: scroll;
+  }
+  
+ 
+   .block-1{
+    grid-column: 1/-1;
+    /* grid-row: 2/3; */
+    background: url(./images/illustration-features-tab-2.svg);
+    background-position: bottom left 20px;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    
+   }
+   .block-1 img{
+       top:50%;
+       left:70%;
+       transform: translate(-50%,-50%);
+       width: 50%;
+       /* height: 90%; */
+   }
+   .block-1 .back{
+       width: 50%;
+   }
+   .block-2{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    justify-content: center;
+    padding: 3rem 1rem;
+
+   }
+   .block-2 .btn{
+    justify-self: center;
+    width: 80%;
+
+   }
+
+   .block-3{
+    grid-column: 3/11;
+}
+   .block-4{
+
+    grid-column: 3/11;
+       
+   }
+   .block-5{
+       grid-column: 2/12 ;
+        width: 100%;   
+    }
+
+   .block-5 .slideshow{
+       width: 100%;
+       border-radius: 10px;
+   }
+   .block-5 .slideshow img{
+       width: 50%;
+       margin:auto;
+
+   }
+   .block-6{
+    grid-column:3/11;
+    width: 100%;
+   }
+   .card{
+       width:80%;
+       margin: 0 auto ; 
+    
+       grid-template-columns: auto;
+
+       padding: 0;
+   }
+   .card .heading{
+       --heading-fnt:1.5rem;
+       font-size: var(--heading-fnt);
+   }
+   .card-btn{
+       --btn-font:1rem;
+       font-size: var(--btn-font);
+       padding: .6rem 1rem;
+       width: 100%;
+   }
+   .block-7 {
+    justify-content: stretch;
+       grid-column: 1/span 6;
+    }
+    .block-8 {
+       justify-content: stretch;
+
+        grid-column: 7/-1;
+    }
+    .block-9 {
+       justify-content: stretch;
+
+        grid-column: 4/10;
+    }
+    .block-10{
+        grid-column: 3/11;
+    }
+    .block-11, .block-12, .block-13, .block-14{
+        grid-column: 3/11;
+    }
+    .block-15{
+        grid-column: 1/-1;
+    }
+    .block-15 .logo{
+        width: 13rem;
+        left:-10px;
+        position: relative;
+    }
+}
 
 
 
