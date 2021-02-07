@@ -3,7 +3,7 @@
 ### Below are the links to some of my top projects to view on live:
 
 ***Responsive webpage design projects***
-* [https://codetobuild.github.io/webprojects.github.io/bookmark/bookmark.html#speedy] Resonsive **Bookmark manager landing webpage**( under development for desktop  screen)
+* [https://codetobuild.github.io/webprojects.github.io/bookmark/bookmark.html] Resonsive **Bookmark manager landing webpage**( under development for desktop  screen)
 * [https://codetobuild.github.io/webprojects.github.io/testimonial/testimonial.html] |Responsive **Testimonial webpage layout** of customers 
 * [https://codetobuild.github.io/webprojects.github.io/room-homepage/room.html] Responsive **Room Home-page** for a Product.
 * [https://codetobuild.github.io/webprojects.github.io/chatillustrate/chat.html] Responsive **landing page for service UI webpage** 
