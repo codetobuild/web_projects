@@ -1,0 +1,157 @@
+ 
+
+* , *::after , *::before{
+   box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+
+
+
+body{
+    padding: 0;
+    margin:0;
+    background-color: darkslategray;
+    /* background-color: rgb(61, 61, 61); */
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
+/* 
+     display: grid;
+     place-content: center;
+     position: relative; */
+}
+
+@media screen and ( min-width:200px)
+{
+
+    :root{
+        --title-fnt-size:2.5rem;
+        --text-fnt-size:1.1rem;
+    }
+    *{
+        /* border: 2px solid red  !important; */
+    }
+    
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px repeat(3,auto);
+
+    justify-items:  center;
+  
+    row-gap: 50px;
+    padding: 10px;
+    /* background-color: yellow; */
+    overflow-x: hidden;
+
+}
+ 
+
+.title-box{
+    max-width: 400px;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-box .heading{
+    /* color:black; */
+    color:rgb(0, 255, 225);
+    font-size: var(--title-fnt-size);
+    font-weight: 600;
+}
+
+.card{
+    max-width: 400px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 1rem 1rem 0 1rem;
+    position: relative;
+    /* display: table; */
+    /* box-shadow: 9px 5px 25px 3px rgb(59, 59, 59); */
+
+}
+
+.card-1{
+    /* display: table-cell; */
+    grid-row: 2/span 1;
+ 
+    background: linear-gradient(45deg , white , rgba(255, 255, 255, 0.75));
+}
+.card-2{
+    grid-row:3/span 1;
+    background: linear-gradient(45deg , rgba(255, 255, 255, 0.7), white);
+}
+.card-3{
+    grid-row: 4/span 1;
+    background: linear-gradient(45deg , rgba(255, 255, 255, 0.7), white);
+}
+
+.card .content{
+    font-size: var(--text-fnt-size);
+    backdrop-filter: blur(10px);
+
+}
+
+span{
+    display: block;
+    color:dodgerblue;
+}
+.card .photo img{
+    position: absolute;
+    top:-30px;
+    left:20px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+
+
+.circle{
+ 
+    border-radius: 50%;
+    position: absolute;
+    z-index: -10;
+;
+}
+.circle-1{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(12, 245, 245, 0.755);
+    right:-5px;
+    top:-50px;
+}
+.circle-2{
+  width: 300px;
+  height: 300px;
+  bottom: 0;
+  left:-50px;
+  background-color: rgb(30, 188, 255);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
